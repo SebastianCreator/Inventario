@@ -20,9 +20,9 @@ const AddProductPage = ({ setCurrentPage }) => {
   };
 
   return (
-    <div className="ij-container ij-py-4">
-      <h2 className="ij-h4 ij-fw-bold ij-text-foreground ij-mb-4">Agregar Nuevo Producto</h2>
-      <div className="ij-card ij-bg-card ij-p-4 ij-shadow-sm">
+    <div className=" container  py-4">
+      <h2 className=" h4  fw-bold  text-foreground  mb-4">Agregar Nuevo Producto</h2>
+      <div className=" card  bg-card  p-4  shadow-sm">
         <ProductForm 
           initialData={product}
           onSubmit={handleSubmit}

@@ -2,8 +2,8 @@ import React from 'react';
 
 const InventoryChart = ({ type }) => {
   return (
-    <div className={`ij-card ij-bg-card ij-p-3 ij-h-100 ij-flex ij-align-center ij-justify-center ${type === 'pie' ? 'ij-ratio ij-ratio-1x1' : ''}`}>
-      <p className="ij-text-muted ij-text-center">
+    <div className={` card  bg-card  p-3  h-100  flex  align-center  justify-center ${type === 'pie' ? ' ratio  ratio-1x1' : ''}`}>
+      <p className=" text-muted  text-center">
         {type === 'pie' && 'Gráfico circular de categorías aparecería aquí'}
         {type === 'line' && 'Gráfico lineal de movimiento de stock aparecería aquí'}
         {type === 'bar' && 'Gráfico de barras de stock bajo aparecería aquí'}

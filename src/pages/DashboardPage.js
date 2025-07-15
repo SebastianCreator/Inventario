@@ -6,11 +6,10 @@ import InventoryNavbar from '../components/InventoryNavbar'; // Importar Navbar 
 const DashboardPage = ({ setCurrentPage }) => { // Recibir setCurrentPage
   return (
     <>
-      <InventoryNavbar setCurrentPage={setCurrentPage} /> {/* Renderizar Navbar aquí */}
-      <div className="ij-container">
+      <div className=" container">
         <InventoryHero />
-        <div className="ij-row ij-gap-4 ij-mt-4">
-          <div className="ij-col-md-4">
+        <div className=" row  gap-4  mt-4">
+          <div className=" col-md-4">
             <StatsCard 
               title="Productos Totales" 
               value="24" 
@@ -18,7 +17,7 @@ const DashboardPage = ({ setCurrentPage }) => { // Recibir setCurrentPage
               trend="up" 
             />
           </div>
-          <div className="ij-col-md-4">
+          <div className=" col-md-4">
             <StatsCard 
               title="Stock Bajo" 
               value="3" 
@@ -26,7 +25,7 @@ const DashboardPage = ({ setCurrentPage }) => { // Recibir setCurrentPage
               trend="down" 
             />
           </div>
-          <div className="ij-col-md-4">
+          <div className=" col-md-4">
             <StatsCard 
               title="Proveedores" 
               value="8" 

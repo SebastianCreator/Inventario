@@ -18,12 +18,12 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
   };
 
   return (
-    <form onSubmit={handleSubmit} className="ij-row ij-gap-3">
-      <div className="ij-col-md-6">
-        <label htmlFor="productName" className="ij-form-label ij-text-muted">Nombre del Producto</label>
+    <form onSubmit={handleSubmit} className=" row  gap-3">
+      <div className=" col-md-6">
+        <label htmlFor="productName" className=" form-label  text-muted">Nombre del Producto</label>
         <input
           type="text"
-          className="ij-form-control"
+          className=" form-control"
           id="productName"
           name="name"
           value={formData.name}
@@ -31,11 +31,11 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
           required
         />
       </div>
-      <div className="ij-col-md-6">
-        <label htmlFor="productSku" className="ij-form-label ij-text-muted">Código del Producto (SKU)</label>
+      <div className=" col-md-6">
+        <label htmlFor="productSku" className=" form-label  text-muted">Código del Producto (SKU)</label>
         <input
           type="text"
-          className="ij-form-control"
+          className=" form-control"
           id="productSku"
           name="sku"
           value={formData.sku}
@@ -44,11 +44,11 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
         />
       </div>
 
-      <div className="ij-col-md-6">
-        <label htmlFor="productStock" className="ij-form-label ij-text-muted">Cantidad de Items (Stock)</label>
+      <div className=" col-md-6">
+        <label htmlFor="productStock" className=" form-label  text-muted">Cantidad de Items (Stock)</label>
         <input
           type="number"
-          className="ij-form-control"
+          className=" form-control"
           id="productStock"
           name="stock"
           value={formData.stock}
@@ -57,10 +57,10 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
           required
         />
       </div>
-      <div className="ij-col-md-6">
-        <label htmlFor="productCategory" className="ij-form-label ij-text-muted">Categoría</label>
+      <div className=" col-md-6">
+        <label htmlFor="productCategory" className=" form-label  text-muted">Categoría</label>
         <select
-          className="ij-form-select"
+          className=" form-select"
           id="productCategory"
           name="category"
           value={formData.category}
@@ -76,11 +76,11 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
         </select>
       </div>
 
-      <div className="ij-col-md-6">
-        <label htmlFor="productPrice" className="ij-form-label ij-text-muted">Precio ($)</label>
+      <div className=" col-md-6">
+        <label htmlFor="productPrice" className=" form-label  text-muted">Precio ($)</label>
         <input
           type="number"
-          className="ij-form-control"
+          className=" form-control"
           id="productPrice"
           name="price"
           value={formData.price}
@@ -90,11 +90,11 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
           required
         />
       </div>
-      <div className="ij-col-md-6">
-        <label htmlFor="entryDate" className="ij-form-label ij-text-muted">Fecha de Entrada</label>
+      <div className=" col-md-6">
+        <label htmlFor="entryDate" className=" form-label  text-muted">Fecha de Entrada</label>
         <input
           type="date"
-          className="ij-form-control"
+          className=" form-control"
           id="entryDate"
           name="entryDate"
           value={formData.entryDate}
@@ -103,10 +103,10 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
         />
       </div>
 
-      <div className="ij-col-12">
-        <label htmlFor="productSupplier" className="ij-form-label ij-text-muted">Proveedor</label>
+      <div className=" col-12">
+        <label htmlFor="productSupplier" className=" form-label  text-muted">Proveedor</label>
         <select
-          className="ij-form-select"
+          className=" form-select"
           id="productSupplier"
           name="supplierId"
           value={formData.supplierId}
@@ -120,10 +120,10 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
         </select>
       </div>
 
-      <div className="ij-col-12">
-        <label htmlFor="productDescription" className="ij-form-label ij-text-muted">Descripción</label>
+      <div className=" col-12">
+        <label htmlFor="productDescription" className=" form-label  text-muted">Descripción</label>
         <textarea
-          className="ij-form-control"
+          className=" form-control"
           id="productDescription"
           name="description"
           value={formData.description}
@@ -132,17 +132,17 @@ const ProductForm = ({ initialData, onSubmit, onCancel, isEditing, suppliers }) 
         />
       </div>
 
-      <div className="ij-col-12 ij-flex ij-justify-end ij-gap-3 ij-pt-4">
+      <div className=" col-12  flex  justify-end  gap-3  pt-4">
         <button
           type="button"
           onClick={onCancel}
-          className="ij-btn ij-btn-outline-secondary"
+          className=" btn  btn-outline-secondary"
         >
           Cancelar
         </button>
         <button
           type="submit"
-          className="ij-btn ij-btn-primary"
+          className=" btn  btn-primary"
         >
           {isEditing ? 'Actualizar Producto' : 'Guardar Producto'}
         </button>

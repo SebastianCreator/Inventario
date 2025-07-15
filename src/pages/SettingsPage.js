@@ -13,16 +13,16 @@ const SettingsPage = () => {
   };
 
   return (
-    <div className="ij-container">
-      <h2 className="ij-h4 ij-fw-bold ij-text-foreground ij-mb-4">Configuración</h2>
+    <div className=" container">
+      <h2 className=" h4  fw-bold  text-foreground  mb-4">Configuración</h2>
       
-      <div className="ij-card ij-bg-card ij-p-4 ij-shadow-sm">
-        <h5 className="ij-card-title ij-fw-semibold ij-text-card-foreground ij-mb-3">Preferencias</h5>
-        <div className="ij-row ij-gap-3">
-          <div className="ij-col-12">
-            <label htmlFor="themeSelect" className="ij-form-label ij-text-muted">Tema</label>
+      <div className=" card  bg-card  p-4  shadow-sm">
+        <h5 className=" card-title  fw-semibold  text-card-foreground  mb-3">Preferencias</h5>
+        <div className=" row  gap-3">
+          <div className=" col-12">
+            <label htmlFor="themeSelect" className=" form-label  text-muted">Tema</label>
             <select 
-              className="ij-form-select"
+              className=" form-select"
               id="themeSelect"
               value={theme}
               onChange={(e) => setTheme(e.target.value)}
@@ -33,39 +33,39 @@ const SettingsPage = () => {
             </select>
           </div>
           
-          <div className="ij-col-12">
-            <label className="ij-form-label ij-text-muted">Notificaciones</label>
-            <div className="ij-form-check">
+          <div className=" col-12">
+            <label className=" form-label  text-muted">Notificaciones</label>
+            <div className=" form-check">
               <input 
                 type="checkbox" 
-                className="ij-form-check-input" 
+                className=" form-check-input" 
                 id="lowStockAlerts"
                 checked={lowStockAlerts}
                 onChange={(e) => setLowStockAlerts(e.target.checked)}
               />
-              <label className="ij-form-check-label ij-text-foreground" htmlFor="lowStockAlerts">Alertas de stock bajo</label>
+              <label className=" form-check-label  text-foreground" htmlFor="lowStockAlerts">Alertas de stock bajo</label>
             </div>
-            <div className="ij-form-check">
+            <div className=" form-check">
               <input 
                 type="checkbox" 
-                className="ij-form-check-input" 
+                className=" form-check-input" 
                 id="reminders"
                 checked={reminders}
                 onChange={(e) => setReminders(e.target.checked)}
               />
-              <label className="ij-form-check-label ij-text-foreground" htmlFor="reminders">Recordatorios</label>
+              <label className=" form-check-label  text-foreground" htmlFor="reminders">Recordatorios</label>
             </div>
           </div>
         </div>
 
         {saveMessage && (
-          <p className="ij-text-success ij-text-center ij-mt-4">{saveMessage}</p>
+          <p className=" text-success  text-center  mt-4">{saveMessage}</p>
         )}
 
-        <div className="ij-flex ij-justify-end ij-mt-4">
+        <div className=" flex  justify-end  mt-4">
           <button
             onClick={handleSave}
-            className="ij-btn ij-btn-primary ij-shadow-sm"
+            className=" btn  btn-primary  shadow-sm"
           >
             Guardar Cambios
           </button>

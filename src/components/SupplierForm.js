@@ -20,12 +20,12 @@ const SupplierForm = ({ initialData, onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="ij-row ij-gap-3">
-      <div className="ij-col-md-6">
-        <label htmlFor="supplierName" className="ij-form-label ij-text-muted">Nombre</label>
+    <form onSubmit={handleSubmit} className=" row  gap-3">
+      <div className=" col-md-6">
+        <label htmlFor="supplierName" className=" form-label  text-muted">Nombre</label>
         <input
           type="text"
-          className="ij-form-control"
+          className=" form-control"
           id="supplierName"
           name="name"
           value={formData.name}
@@ -34,11 +34,11 @@ const SupplierForm = ({ initialData, onSubmit }) => {
         />
       </div>
       
-      <div className="ij-col-md-6">
-        <label htmlFor="supplierCategory" className="ij-form-label ij-text-muted">Categoría</label>
+      <div className=" col-md-6">
+        <label htmlFor="supplierCategory" className=" form-label  text-muted">Categoría</label>
         <input
           type="text"
-          className="ij-form-control"
+          className=" form-control"
           id="supplierCategory"
           name="category"
           value={formData.category}
@@ -47,11 +47,11 @@ const SupplierForm = ({ initialData, onSubmit }) => {
         />
       </div>
       
-      <div className="ij-col-md-6">
-        <label htmlFor="supplierContact" className="ij-form-label ij-text-muted">Contacto</label>
+      <div className=" col-md-6">
+        <label htmlFor="supplierContact" className=" form-label  text-muted">Contacto</label>
         <input
           type="text"
-          className="ij-form-control"
+          className=" form-control"
           id="supplierContact"
           name="contact"
           value={formData.contact}
@@ -60,11 +60,11 @@ const SupplierForm = ({ initialData, onSubmit }) => {
         />
       </div>
       
-      <div className="ij-col-md-6">
-        <label htmlFor="supplierProducts" className="ij-form-label ij-text-muted">Productos</label>
+      <div className=" col-md-6">
+        <label htmlFor="supplierProducts" className=" form-label  text-muted">Productos</label>
         <input
           type="number"
-          className="ij-form-control"
+          className=" form-control"
           id="supplierProducts"
           name="products"
           value={formData.products}
@@ -73,11 +73,11 @@ const SupplierForm = ({ initialData, onSubmit }) => {
         />
       </div>
       
-      <div className="ij-col-12">
-        <label htmlFor="supplierEmail" className="ij-form-label ij-text-muted">Email</label>
+      <div className=" col-12">
+        <label htmlFor="supplierEmail" className=" form-label  text-muted">Email</label>
         <input
           type="email"
-          className="ij-form-control"
+          className=" form-control"
           id="supplierEmail"
           name="email"
           value={formData.email}
@@ -86,16 +86,16 @@ const SupplierForm = ({ initialData, onSubmit }) => {
         />
       </div>
       
-      <div className="ij-col-12 ij-flex ij-justify-end ij-gap-3 ij-pt-4">
+      <div className=" col-12  flex  justify-end  gap-3  pt-4">
         <button
           type="button"
-          className="ij-btn ij-btn-outline-secondary"
+          className=" btn  btn-outline-secondary"
         >
           Cancelar
         </button>
         <button
           type="submit"
-          className="ij-btn ij-btn-primary"
+          className=" btn  btn-primary"
         >
           Guardar
         </button>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import react, { useState, useEffect } from 'react';
 import DashboardPage from './pages/DashboardPage';
 import ProductsPage from './pages/ProductsPage';
 import AddProductPage from './pages/AddProductPage';
@@ -7,6 +7,9 @@ import SuppliersPage from './pages/SuppliersPage';
 import ReportsPage from './pages/ReportsPage';
 import SettingsPage from './pages/SettingsPage';
 import InventoryFooter from './components/InventoryFooter';
+import InventoryNavbar from './components/InventoryNavbar'; // Importar Navbar
+import './styles.css'; // Asegúrate de que la ruta sea correcta
+
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('dashboard'); // Inicia directamente en el dashboard
@@ -42,10 +45,10 @@ const App = () => {
   };
 
   return (
-    <div className="ij-flex ij-flex-col ij-min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
-      {/* La navbar ahora se integra en el DashboardPage o se elimina si no es necesaria globalmente */}
-      <main className="ij-flex-grow-1 ij-py-4 ij-px-3">
-        <div className="ij-container-fluid">
+    <div className=" flex  flex-col  min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
+      <InventoryNavbar setCurrentPage={setCurrentPage} /> {/* Renderizar Navbar aquí */}
+      <main className=" flex-grow-1  py-4  px-3">
+        <div className=" container-fluid">
           {renderPage()}
         </div>
       </main>

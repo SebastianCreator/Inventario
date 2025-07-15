@@ -13,4 +13,5 @@ const InventoryLayout = ({ children }) => {
     </div>
   );
 };
+
 export default InventoryLayout;

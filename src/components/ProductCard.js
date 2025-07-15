@@ -2,30 +2,30 @@ import React from 'react';
 
 const ProductCard = ({ product, onEdit }) => {
   return (
-    <div className="ij-card ij-bg-card ij-text-card-foreground ij-shadow-sm ij-h-100">
-      <div className="ij-card-body ij-flex ij-flex-col">
-        <div className="ij-flex ij-justify-between ij-align-items-start ij-mb-3">
+    <div className=" card  bg-card  text-card-foreground  shadow-sm  h-100">
+      <div className=" card-body  flex  flex-col">
+        <div className=" flex  justify-between  align-items-start  mb-3">
           <div>
-            <h5 className="ij-card-title ij-fw-semibold">{product.name}</h5>
-            <p className="ij-card-subtitle ij-text-muted">{product.category}</p>
+            <h5 className=" card-title  fw-semibold">{product.name}</h5>
+            <p className=" card-subtitle  text-muted">{product.category}</p>
           </div>
-          <span className={`ij-badge ${
-            product.stock > 10 ? 'ij-bg-success' : 'ij-bg-warning ij-text-card-foreground'
+          <span className={` badge ${
+            product.stock > 10 ? ' bg-success' : ' bg-warning  text-card-foreground'
           }`}>
             {product.stock} en stock
           </span>
         </div>
-        <p className="ij-card-text ij-text-muted ij-flex-grow-1">{product.description}</p>
-        <div className="ij-flex ij-justify-between ij-align-center ij-mt-3">
-          <span className="ij-fs-5 ij-fw-bold ij-text-primary">${product.price}</span>
-          <div className="ij-flex ij-gap-2">
+        <p className=" card-text  text-muted  flex-grow-1">{product.description}</p>
+        <div className=" flex  justify-between  align-center  mt-3">
+          <span className=" fs-5  fw-bold  text-primary">${product.price}</span>
+          <div className=" flex  gap-2">
             <button 
               onClick={onEdit}
-              className="ij-btn ij-btn-sm ij-btn-outline-primary"
+              className=" btn  btn-sm  btn-outline-primary"
             >
               Editar
             </button>
-            <button className="ij-btn ij-btn-sm ij-btn-outline-danger">
+            <button className=" btn  btn-sm  btn-outline-danger">
               Eliminar
             </button>
           </div>
